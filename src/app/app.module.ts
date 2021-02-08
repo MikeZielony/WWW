@@ -9,7 +9,7 @@ import { BlogComponent } from './blog/blog.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import {AppRoutingModule} from './app-routing,module';
 import {HttpClientModule} from '@angular/common/http';
-import { MapaComponent } from './mapa/mapa.component';
+import { MapComponent } from './mapa/map.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
@@ -21,12 +21,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AktualComponent,
     BlogComponent,
     KontaktComponent,
-    MapaComponent,
+    MapComponent,
     NavbarComponent,
     PageNotFoundComponent
   ],
   imports: [
-    BrowserModule, AppRoutingModule, HttpClientModule
+    BrowserModule, AppRoutingModule, HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

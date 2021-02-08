@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "name": "Museum",
+    "type": 1,
+    "geometry": {
+      "type": "MPoint",
+      "coordinates": [
+        19.963510036468506,
+        50.048038649533865
+      ]
+    }
+  },
+  {
+    "id": 1,
+    "name": "Restaurant",
+    "type": 3,
+    "geometry": {
+      "type": "RPoint",
+      "coordinates": [
+        19.963113069534298,
+        50.04987810266161
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "name": "Running Track",
+    "type": 1,
+    "geometry": {
+      "type": "S Point",
+      "coordinates": [
+        19.963799715042114,
+        50.05023289543509
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "name": "Hotel",
+    "type": 5,
+    "geometry": {
+      "type": "HPoint",
+      "coordinates": [
+        19.964336156845093,
+        50.04810065472004
+      ]
+    }
+  }
+]
