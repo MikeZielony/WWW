@@ -55,7 +55,7 @@ export class MapComponent implements OnInit, AfterViewInit{
           `lat: ${position.coords.latitude}, lon: ${position.coords.longitude}`
         );
 
-        this._map.flyTo(latLong, 13);
+       //
       });
     }
   }
@@ -90,5 +90,6 @@ export class MapComponent implements OnInit, AfterViewInit{
   private _addMapMarker(geo: MapGeometryModel): void {
     const [long, lat] = geo.coordinates;
     L.marker([lat, long], this._markerIcon).addTo(this._map);
+    this._map.flyTo([lat,long], 16);
   }
 }
