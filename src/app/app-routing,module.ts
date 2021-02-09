@@ -19,7 +19,7 @@ const routes: Routes = [
   {path: 'mapa', component: MapComponent},
   {path: 'navbar', component: NavbarComponent},
   {path: 'menu', component: MenuComponent},
-  { path: '*', component: PageNotFoundComponent },
+  {path: '*', component: PageNotFoundComponent },
 ];
 
 @NgModule({
