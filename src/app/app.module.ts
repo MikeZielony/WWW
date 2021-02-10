@@ -2,16 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { MenuComponent } from './menu/menu.component';
-import { HomeComponent } from './home/home.component';
-import { AktualComponent } from './aktual/aktual.component';
-import { BlogComponent } from './blog/blog.component';
-import { KontaktComponent } from './kontakt/kontakt.component';
+import { MenuComponent } from './pages/menu/menu.component';
+import { HomeComponent } from './pages/home/home.component';
+import { AktualComponent } from './pages/aktual/aktual.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { KontaktComponent } from './pages/kontakt/kontakt.component';
 import {AppRoutingModule} from './app-routing,module';
 import {HttpClientModule} from '@angular/common/http';
-import { MapComponent } from './mapa/map.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { MapComponent } from './pages/mapa/map.component';
+import { NavbarComponent } from './pages/navbar/navbar.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
