@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { MapPointTypeEnum} from '../../models/mapResult.model';
+import { MapPointTypeEnum} from '../../../models/mapResult.model';
 
 @Pipe({
   name: 'mapResultType'

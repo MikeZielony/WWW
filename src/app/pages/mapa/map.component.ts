@@ -1,8 +1,8 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import * as L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { MapDataService} from '../services/map-data.service';
-import { MapGeometryModel, MapResultModel} from '../models/mapResult.model';
+import { MapDataService} from '../../services/map-data.service';
+import { MapGeometryModel, MapResultModel} from '../../models/mapResult.model';
 import { take } from 'rxjs/operators';
 
 @Component({
