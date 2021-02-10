@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "jewish-cementary"
+  "defaultProject": "jewish-cementary",
+  "cli": {
+    "analytics": false
+  }
 }

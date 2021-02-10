@@ -12,6 +12,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { MapComponent } from './pages/mapa/map.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import {UserSettingComponent} from './pages/user-setting/user-setting.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     KontaktComponent,
     MapComponent,
     NavbarComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    UserSettingComponent
   ],
   imports: [
     BrowserModule, AppRoutingModule, HttpClientModule,
