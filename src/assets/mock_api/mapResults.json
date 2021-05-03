@@ -1,19 +1,25 @@
 [
   {
     "id": 0,
-    "name": "Museum",
+    "name": "Synagoga i cmentarz Remuh",
+    "info": "\"<b>Info : </b><a href='https://pl.wikipedia.org/wiki/Cmentarz_Remuh'>Click</a>",
+    "gallery": "\"<b>Gallery : </b><a href='https://www.google.com/search?q=cmentarz+remuh&client=firefox-b-d&prmd=mins&sxsrf=ALeKk02DrltInFHpY7e8InTc4-IF5BrriA:1620027198124&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjVjq7N_6zwAhVipYsKHfNrAzoQ_AUoAnoECAEQAg&biw=1564&bih=742'>Click</a>",
+    "video": "\"<b>Video : </b><a href='https://youtu.be/pt4mTZT07wE'>Click</a>",
     "type": 1,
     "geometry": {
       "type": "MPoint",
       "coordinates": [
-        19.963510036468506,
-        50.048038649533865
+        19.9472987651825,
+        50.05253898452961
       ]
     }
   },
   {
     "id": 1,
     "name": "Restaurant",
+    "info": "",
+    "gallery": "",
+    "video": "",
     "type": 3,
     "geometry": {
       "type": "RPoint",
@@ -25,19 +31,26 @@
   },
   {
     "id": 3,
-    "name": "Running Track",
+    "name": "Nowy cmentarz żydowski w Krakowie",
+   "info": "\"<b>Info : </b><a href='https://pl.wikipedia.org/wiki/Nowy_cmentarz_%C5%BCydowski_w_Krakowie'>Click</a> ",
+    "gallery": "\"<b>Gallery : </b><a href=''>Click</a> ",
+    "video": "\"<b>Move : </b><a href='https://youtu.be/Ul2B083iBrM'>Click</a>",
     "type": 1,
     "geometry": {
       "type": "S Point",
       "coordinates": [
-        19.963799715042114,
-        50.05023289543509
+        19.94997560977936,
+          50.05413199853536
+
       ]
     }
   },
   {
     "id": 4,
     "name": "Hotel",
+    "info": "",
+    "gallery": "",
+    "video": "",
     "type": 5,
     "geometry": {
       "type": "HPoint",

@@ -1,3 +1,7 @@
 <app-navbar></app-navbar>
 <p>blog works!</p>
 
+<ng-container *ngFor="let marker of mapResults, index as i">
+ <li > {{i+1}} {{marker.name}}  </li>
+
+</ng-container>

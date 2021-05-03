@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import {AfterViewInit, Component, Injectable, OnInit} from '@angular/core';
 import * as L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { MapDataService} from '../../services/map-data.service';
@@ -9,6 +9,10 @@ import { take } from 'rxjs/operators';
   selector: 'app-map',
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.css']
+})
+
+@Injectable({
+  providedIn: 'root'
 })
 export class MapComponent implements OnInit, AfterViewInit{
 
@@ -51,11 +55,11 @@ export class MapComponent implements OnInit, AfterViewInit{
       navigator.geolocation.getCurrentPosition((position) => {
         const coords = position.coords;
         const latLong = [coords.latitude, coords.longitude];
+        this._map.flyTo([latLong[0], latLong[1]], 12);
+        L.marker([latLong[0], latLong[1]], this._markerIcon).addTo(this._map).bindPopup('jesteś tutaj').openPopup();
         console.log(
           `lat: ${position.coords.latitude}, lon: ${position.coords.longitude}`
         );
-
-       //
       });
     }
   }
@@ -72,7 +76,7 @@ export class MapComponent implements OnInit, AfterViewInit{
     ).addTo(this._map);
     this._map.on('click', e => {
       console.log(e.latlng); // get the coordinates
-      L.marker([e.latlng.lat, e.latlng.lng], this._markerIcon).addTo(this._map); // add the marker onclick
+    //  L.marker([e.latlng.lat, e.latlng.lng], this._markerIcon).addTo(this._map); // add the marker onclick
     });
   }
 
@@ -83,13 +87,14 @@ export class MapComponent implements OnInit, AfterViewInit{
       )
       .subscribe(results => {
         this.mapResults = results;
-        this.mapResults.forEach(mapResult => this._addMapMarker(mapResult.geometry));
+        this.mapResults.forEach(mapResult => this._addMapMarker(mapResult.geometry,
+          mapResult.name, mapResult.info, mapResult.gallery, mapResult.video));
       });
   }
 
-  private _addMapMarker(geo: MapGeometryModel): void {
+  private _addMapMarker(geo: MapGeometryModel, name: string, info: string, gallery: string, video: string): void {
     const [long, lat] = geo.coordinates;
-    L.marker([lat, long], this._markerIcon).addTo(this._map);
-    this._map.flyTo([lat,long], 16);
+    L.marker([lat, long], this._markerIcon).addTo(this._map).bindPopup(name, {autoClose: false}).openPopup();
+    L.marker([lat, long], this._markerIcon).addTo(this._map).bindPopup(name + `<br>` + info + `<br>` + gallery + `<br>` + video);
   }
 }

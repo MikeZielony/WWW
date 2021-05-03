@@ -3,12 +3,18 @@ import { IMapResultDto, IMapResultGeometryDto } from './mapResult.dto';
 export class MapResultModel {
   public id: number;
   public name: string;
+  public info: string;
+  public gallery: string;
+  public video: string;
   public type: MapPointTypeEnum;
   public geometry: MapGeometryModel;
 
   constructor(input: IMapResultDto) {
     this.id = input.id;
     this.name = input.name;
+    this.info = input.info;
+    this.gallery = input.gallery;
+    this.video = input.video;
     this.type = input.type;
     this.geometry = new MapGeometryModel(input.geometry);
   }
