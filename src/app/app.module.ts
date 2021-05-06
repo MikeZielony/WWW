@@ -12,6 +12,10 @@ import { MapComponent } from './pages/mapa/map.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import {UserSettingComponent} from './pages/user-setting/user-setting.component';
+import { Gallery1Component } from './pages/blog/gallery1/gallery1.component';
+import { Gallery2Component } from './pages/blog/gallery2/gallery2.component';
+import { Gallery3Component } from './pages/blog/gallery3/gallery3.component';
+import { Gallery4Component } from './pages/blog/gallery4/gallery4.component';
 
 
 @NgModule({
@@ -25,7 +29,11 @@ import {UserSettingComponent} from './pages/user-setting/user-setting.component'
     MapComponent,
     NavbarComponent,
     PageNotFoundComponent,
-    UserSettingComponent
+    UserSettingComponent,
+    Gallery1Component,
+    Gallery2Component,
+    Gallery3Component,
+    Gallery4Component
   ],
   imports: [
     BrowserModule, AppRoutingModule, HttpClientModule,

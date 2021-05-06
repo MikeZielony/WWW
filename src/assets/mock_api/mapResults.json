@@ -1,6 +1,6 @@
 [
   {
-    "id": 0,
+    "id": 1,
     "name": "Synagoga i cmentarz Remuh",
     "info": "https://pl.wikipedia.org/wiki/Cmentarz_Remuh",
     "gallery": "https://www.google.com/search?q=cmentarz+remuh&client=firefox-b-d&prmd=mins&sxsrf=ALeKk02DrltInFHpY7e8InTc4-IF5BrriA:1620027198124&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjVjq7N_6zwAhVipYsKHfNrAzoQ_AUoAnoECAEQAg&biw=1564&bih=742",
@@ -15,7 +15,7 @@
     }
   },
   {
-    "id": 1,
+    "id": 2,
     "name": "Podgórski cmentarz żydowski stary",
     "info": "https://pl.wikipedia.org/wiki/Podg%C3%B3rski_cmentarz_%C5%BCydowski_stary_w_Krakowie",
     "gallery": "",
