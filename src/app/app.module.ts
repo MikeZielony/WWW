@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -29,7 +28,7 @@ import {UserSettingComponent} from './pages/user-setting/user-setting.component'
     UserSettingComponent
   ],
   imports: [
-    BrowserModule, AppRoutingModule, HttpClientModule, MDBBootstrapModule.forRoot(),
+    BrowserModule, AppRoutingModule, HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
