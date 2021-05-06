@@ -1,0 +1,10 @@
+<app-navbar></app-navbar>
+<p>gallery2 works!</p>
+
+<div class="row">
+  <ng-container class="column" *ngFor="let id of numbers, index as i">
+    <li> {{i+1}}
+      <img src="./assets/img/{{idi}}/{{i+1}}.jpg" width="100"  height="100" alt="">
+    </li>
+  </ng-container>
+</div>

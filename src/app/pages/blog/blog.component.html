@@ -1,54 +1,19 @@
 <app-navbar></app-navbar>
 <p>blog works!</p>
+
 <div class="gallery-wrapper">
 <ng-container *ngFor="let marker of mapResults, index as i">
 
     <li> {{i+1}} {{marker.name}}
-    <a href="./assets/img/tm-img-0{{i+1}}.jpg">
-      <img src="./assets/img/tm-img-0{{i+1}}-tn.jpg" alt=""/>
+    <a href="./blog/{{marker.id}}">
+      <app-blog idi="{{marker.id}}"></app-blog>
+      <img src="./assets/img/tm-img-0{{i+1}}-tn.jpg" width="100"  height="100" alt=""/>
       <div class="image-title">{{ marker.name }}</div>
     </a>
   </li>
 
 </ng-container>
 
-
-
-
-
-
-
-<div class="gallery-lightboxes">
-
-  <div class="image-lightbox" id="lightbox-image-1">
-    <div class="image-lightbox-wrapper">
-      <a href="" class="close"></a>
-      <a href="#lightbox-image-3" class="arrow-left"></a>
-      <a href="#lightbox-image-2" class="arrow-right"></a>
-      <img src="https://mdbootstrap.com/img/new/slides/041.jpg" alt=""/>
-      <div class="image-title">Cat staring at me</div>
-    </div>
-  </div>
-
-  <div class="image-lightbox" id="lightbox-image-2">
-    <div class="image-lightbox-wrapper">
-      <a href="#" class="close"></a>
-      <a href="#lightbox-image-1" class="arrow-left"></a>
-      <a href="#lightbox-image-3" class="arrow-right"></a>
-      <img src="https://mdbootstrap.com/img/new/slides/042.jpg" alt=""/>
-      <div class="image-title">Cat playing with mouse</div>
-    </div>
-  </div>
-
-  <div class="image-lightbox" id="lightbox-image-3">
-    <div class="image-lightbox-wrapper">
-      <a href="#" class="close"></a>
-      <a href="#lightbox-image-2" class="arrow-left"></a>
-      <a href="#lightbox-image-1" class="arrow-right"></a>
-      <img src="https://mdbootstrap.com/img/new/slides/043.jpg" alt=""/>
-      <div class="image-title">Cat turns away</div>
-    </div>
-  </div>
-
 </div>
-</div>
+
+<router-outlet></router-outlet>
