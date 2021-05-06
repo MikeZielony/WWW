@@ -11,12 +11,11 @@ import {MapResultModel} from '../../models/mapResult.model';
 })
 export class BlogComponent implements OnInit {
   public mapResults: MapResultModel[] = [];
-  index = 1;
 
   constructor(public map: MapComponent, public mapDataService: MapDataService) { }
 
   ngOnInit(): void {
-    console.log(this.mapData());
+    this.mapData();
   }
   mapData(): void{
       this.mapDataService.getMapResult()

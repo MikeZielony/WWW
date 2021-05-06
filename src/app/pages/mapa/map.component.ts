@@ -94,7 +94,11 @@ export class MapComponent implements OnInit, AfterViewInit{
 
   private _addMapMarker(geo: MapGeometryModel, name: string, info: string, gallery: string, video: string): void {
     const [long, lat] = geo.coordinates;
-    L.marker([lat, long], this._markerIcon).addTo(this._map).bindPopup(name, {autoClose: false}).openPopup();
-    L.marker([lat, long], this._markerIcon).addTo(this._map).bindPopup(name + `<br>` + info + `<br>` + gallery + `<br>` + video);
+   // L.marker([lat, long], this._markerIcon).addTo(this._map).bindPopup(name, {autoClose: false}).openPopup();
+    const infoPop = `<b>Info : </b><a href=\'${info}\'>Click</a>`;
+    const galleryPop = `<b>Gallery : </b><a href=\'${gallery}\'>Click</a>`;
+    const videoPop = `<b>Video : </b><a href=\'${video}\'>Click</a>`;
+
+    L.marker([lat, long], this._markerIcon).addTo(this._map).bindPopup(name + `<br>` + infoPop + `<br>` + galleryPop + `<br>` + videoPop);
   }
 }
