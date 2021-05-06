@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -13,6 +13,7 @@ import { MapComponent } from './pages/mapa/map.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import {UserSettingComponent} from './pages/user-setting/user-setting.component';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import {UserSettingComponent} from './pages/user-setting/user-setting.component'
     UserSettingComponent
   ],
   imports: [
-    BrowserModule, AppRoutingModule, HttpClientModule,
+    BrowserModule, AppRoutingModule, HttpClientModule, MDBBootstrapModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
